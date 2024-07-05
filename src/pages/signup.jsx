@@ -25,7 +25,10 @@ const Signup = () => {
       return;
     }
     try {
-      await axios.post("http://localhost:3000/api/users", formData);
+      await axios.post(
+        "https://altschooltestingbe.onrender.com/api/users",
+        formData
+      );
       alert("Successfully registered");
       setFormData({
         name: "",

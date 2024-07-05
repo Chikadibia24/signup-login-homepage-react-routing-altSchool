@@ -19,7 +19,9 @@ const HomePage = () => {
 
   async function fetchUsers() {
     try {
-      const response = await axios.get("http://localhost:3000/api/users");
+      const response = await axios.get(
+        "https://altschooltestingbe.onrender.com/api/users"
+      );
       setUsers(response.data);
     } catch (error) {
       console.error("Error fetching users:", error);

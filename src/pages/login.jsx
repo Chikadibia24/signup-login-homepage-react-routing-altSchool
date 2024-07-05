@@ -30,7 +30,7 @@ const Login = () => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/users/login",
+        "https://altschooltestingbe.onrender.com/api/users/login",
         formData
       );
 
